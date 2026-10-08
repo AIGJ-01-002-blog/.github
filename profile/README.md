@@ -365,6 +365,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.33.1 | 2026-10-08 | 의미 검색 켜짐 여부를 시작 로그에, 클러스터 상태에 임베딩 진행 보기 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.33.1) |
 | v1.33.0 | 2026-10-08 | 글 수정 이력, 발행 전 점검, 내 글 Markdown 내보내기 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.33.0) |
 | v1.32.1 | 2026-10-08 | 학교 서버 클러스터 상태를 읽기 전용으로 보는 "클러스터 상태" 실행(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.32.1) |
 | v1.32.0 | 2026-10-08 | 하이브리드 검색: 검색어가 없어도 뜻이 비슷한 글 찾기 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.32.0) |
