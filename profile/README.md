@@ -361,6 +361,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.31.0 | 2026-10-08 | AI가 발행한 글 고치기·사진 올리기·내 글 전체 검색 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.31.0) |
 | v1.30.0 | 2026-10-08 | 버튼 툴팁, 모바일 아래 탭, 에디터 서식 도구 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.30.0) |
 | v1.29.0 | 2026-10-08 | 문의·신고 접수, AI 버그 신고(report_bug), 릴리스 노트 화면 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.29.0) |
 | v1.28.1 | 2026-10-08 | AI 발행·삭제를 켠 뒤 다시 연결하라는 안내 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.28.1) |
