@@ -120,7 +120,7 @@ AI 사용에 동의했다면 AI가 제목을 붙이고 문장을 다듬고, 아�
 
 - **홈** — 최신 탭과 트렌딩 탭(최근 7일, 좋아요·댓글·조회를 글 나이로 감쇠, 10분마다 갱신, 한 사람 글은 3개까지).
 - **글 상세** — 목차, 읽는 시간, 시리즈, 이전·다음 글, 작성자 소개와 소셜 링크, 공유 버튼, 링크 미리보기(Open Graph).
-- **태그·검색** — 태그별 글 모아 보기, 제목·태그·본문 검색(관련도순·최신순), 사람 검색.
+- **태그·검색** — 태그별 글 모아 보기, 제목·태그·본문 키워드와 뜻을 함께 보는 하이브리드 검색(관련도순·최신순), 사람 검색.
 - **RSS** — 블로그별 `/@아이디/rss`와 전체 `/rss`.
 
 ### 반응과 관계
@@ -148,7 +148,7 @@ flowchart LR
     T[텔레그램] -->|봇 API| A
     I -->|/ · /api · /rss| A[blog-app<br/>Spring Boot 4.1 · Java 21<br/>파드 여러 개]
     I -->|/blog-images| M[(MinIO / S3<br/>사진·첨부)]
-    A --> P[(PostgreSQL<br/>Flyway V1~V15)]
+    A --> P[(PostgreSQL<br/>Flyway V1~V16)]
     A --> R[(Redis<br/>세션·요청 제한·조회수·캐시)]
     A --> M
     A -.선택.-> G[Google Gemini]
@@ -164,7 +164,7 @@ flowchart LR
 | **post** | 글 쓰기·자동 저장·발행·수정, 공개 범위, 휴지통, 내 글 관리, Markdown 미리보기 | PostgreSQL, Redis(자동 저장·멱등 키) |
 | **media** | 사진·GIF·첨부파일 올리기와 검사, 쓰지 않는 파일 정리 | MinIO/S3(없으면 로컬 폴더) |
 | **discovery · page** | 홈·블로그·글 상세 조회, 이전·다음 글, RSS, 링크 미리보기용 머리 정보를 넣은 화면 셸 | PostgreSQL |
-| **tag · search · trending** | 태그 모아 보기, 글·사람 검색, 트렌딩 순위(10분마다) | PostgreSQL(pg_trgm은 있으면 사용) |
+| **tag · search · trending** | 태그 모아 보기, 글·사람 검색, 트렌딩 순위(10분마다) | PostgreSQL(pg_trgm·pgvector는 있으면 사용), 임베딩 bge-m3 |
 | **comment · like · view** | 댓글·답글, 좋아요, 조회수(Redis에 모아 1분마다 옮김) | PostgreSQL, Redis |
 | **follow · friend · notification** | 팔로우와 피드, 친구, 앱 안 알림 | PostgreSQL |
 | **series** | 시리즈 묶기·순서 | PostgreSQL |
@@ -238,7 +238,7 @@ GitHub Actions로 테스트하고 이미지를 만들어 GHCR에 올린 뒤, kus
 
 | 경로 | 설명 |
 | --- | --- |
-| [app/backend](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/app/backend) | 백엔드 — Spring Boot 4.1, Java 21. 기능 모듈, Flyway 마이그레이션(V1~V15), 테스트 |
+| [app/backend](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/app/backend) | 백엔드 — Spring Boot 4.1, Java 21. 기능 모듈, Flyway 마이그레이션(V1~V16), 테스트 |
 | [app/frontend](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/app/frontend) | 프론트엔드 — React 19 SPA, TypeScript, Vite. 화면, 자동 저장(IndexedDB), 다크 모드 |
 | [deploy](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/deploy) | 배포 — Dockerfile, 쿠버네티스 매니페스트(base·selfhosted·nhn·local), 배포·롤백·비밀값 검사 스크립트 |
 | [.github](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/.github) | CI/CD — 백엔드·화면 테스트, 이미지 빌드·배포, 릴리스, Discord·텔레그램 알림 |
@@ -315,7 +315,7 @@ npm run dev        # http://localhost:5173
 | Spring Security · OAuth2 Client | Boot 4.1 | account | GitHub·Google 로그인, 세션, CSRF, 경로별 권한 |
 | Spring Data JPA (Hibernate) | Boot 4.1 | 도메인 전체 | 회원·글·댓글 등 도메인 저장 |
 | Spring Session Data Redis · Spring Data Redis | Boot 4.1 | 세션, 요청 제한, 조회수, 캐시 | 파드 여러 개가 같은 세션을 보고, 동시 요청도 Redis 스크립트 하나로 판정합니다 |
-| Flyway | Boot 4.1 | DB | 스키마를 V1~V15 마이그레이션으로 관리하고 앱 시작 때 적용합니다 |
+| Flyway | Boot 4.1 | DB | 스키마를 V1~V16 마이그레이션으로 관리하고 앱 시작 때 적용합니다 |
 | commonmark-java (+ GFM 확장) | 0.30.0 | 본문 렌더링 | Markdown → HTML. 표·취소선·체크 목록·자동 링크·제목 앵커 |
 | OWASP Java HTML Sanitizer | 20260924.2 | 본문 정화 | 렌더링한 HTML을 허용 목록으로 정화해 XSS를 막습니다 |
 | AWS SDK for Java (S3) | 2.55.12 | media | MinIO·S3에 사진과 첨부를 올립니다 |
@@ -336,7 +336,7 @@ npm run dev        # http://localhost:5173
 
 | 기술 | 쓰는 곳 | 역할 |
 | --- | --- | --- |
-| PostgreSQL 16 · 17 | 로컬 · 클러스터 | 서비스 DB. 검색에 `pg_trgm`이 있으면 씁니다 |
+| PostgreSQL 16 · 17 | 로컬 · 클러스터 | 서비스 DB. 검색에 `pg_trgm`과 `pgvector`가 있으면 씁니다 |
 | Redis 7 · 7.4 | 로컬 · 클러스터 | 세션, 요청 제한, 조회수 집계, 렌더링 캐시, 자동 저장, 예약 작업 잠금 |
 | MinIO | 클러스터 | 사진·첨부 저장(S3 호환). 첫 배포 때 버킷을 만들고 받기만 공개합니다 |
 | Docker · GHCR | 이미지 | 화면 빌드 → 백엔드에 넣어 하나의 이미지로. 루트가 아닌 사용자로 실행합니다 |
@@ -361,6 +361,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.32.0 | 2026-10-08 | 하이브리드 검색: 검색어가 없어도 뜻이 비슷한 글 찾기 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.32.0) |
 | v1.31.0 | 2026-10-08 | AI가 발행한 글 고치기·사진 올리기·내 글 전체 검색 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.31.0) |
 | v1.30.0 | 2026-10-08 | 버튼 툴팁, 모바일 아래 탭, 에디터 서식 도구 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.30.0) |
 | v1.29.0 | 2026-10-08 | 문의·신고 접수, AI 버그 신고(report_bug), 릴리스 노트 화면 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.29.0) |
