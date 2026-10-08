@@ -361,6 +361,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.27.7 | 2026-10-08 | 학교 MinIO 주소를 8000번 포트로(nhn, 배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.7) |
 | v1.27.6 | 2026-10-08 | main 머지 시 학교 서버에 자동 배포(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.6) |
 | v1.27.5 | 2026-10-08 | 배포 시 학교 서버 SSH 터널이 열릴 때까지 기다리게(터널 끊김 수정, 배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.5) |
 | v1.27.4 | 2026-10-08 | 학교 서버 클러스터가 학교 DNS로 바깥 주소를 찾게(도메인 연결 복구, 배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.4) |
