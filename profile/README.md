@@ -361,6 +361,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.27.1 | 2026-10-08 | 학교 실습 서버에 쿠버네티스(k3d)로 배포(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.27.1) |
 | v1.27.0 | 2026-10-08 | devlog MCP 서버, ChatGPT·Codex 연결, 집 PC AI 먼저 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.27.0) |
 | v1.26.1 | 2026-10-08 | 배포가 Gemini 열쇠와 집 PC Ollama 설정을 앱에 넣기(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.26.1) |
 | v1.26.0 | 2026-10-08 | MCP 개발 일지 중심 첫 화면과 AI 연결 안내 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.26.0) |
