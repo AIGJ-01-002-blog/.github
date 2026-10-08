@@ -1,6 +1,6 @@
 <div align="center">
 
-🌐 **한국어** | **[English](https://github.com/AIGJ-01-002-blog/docs/blob/main/README.en.md)**
+🌐 **한국어** | **[English](https://github.com/AIGJ-01-002-blog/docs/blob/main/README.en.md)** | **[日本語](https://github.com/AIGJ-01-002-blog/docs/blob/main/README.ja.md)** | **[简体中文](https://github.com/AIGJ-01-002-blog/docs/blob/main/README.zh.md)**
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AIGJ-01-002-blog/docs/main/docs/images/logo-dark.png" />
@@ -68,8 +68,11 @@
 ### 내 컴퓨터에서 5분 만에 띄우기
 
 ```bash
+# 터미널 1 — 의존 서비스와 백엔드
 docker compose -f app/compose.yaml up -d                 # PostgreSQL 16 · Redis 7
 cd app/backend && DEV_LOGIN_ENABLED=true SITE_BASE_URL=http://localhost:5173 ./mvnw spring-boot:run
+
+# 터미널 2 — 프론트엔드 (저장소 루트에서)
 cd app/frontend && npm install && npm run dev            # http://localhost:5173
 ```
 
@@ -145,7 +148,7 @@ flowchart LR
     T[텔레그램] -->|봇 API| A
     I -->|/ · /api · /rss| A[blog-app<br/>Spring Boot 4.1 · Java 21<br/>파드 여러 개]
     I -->|/blog-images| M[(MinIO / S3<br/>사진·첨부)]
-    A --> P[(PostgreSQL<br/>Flyway V1~V10)]
+    A --> P[(PostgreSQL<br/>Flyway V1~V12)]
     A --> R[(Redis<br/>세션·요청 제한·조회수·캐시)]
     A --> M
     A -.선택.-> G[Google Gemini]
@@ -219,7 +222,7 @@ sequenceDiagram
 - **존재를 감추는 404** — 비공개·친구 공개·휴지통·숨김 글은 볼 권한이 없으면 없는 글과 같은 404입니다.
 - **요청 제한** — 글쓰기·자동 저장·사진 올리기·좋아요·검색·신고·AI 추천처럼 반복될 수 있는 요청마다 횟수 제한(429, `Retry-After`)을 둡니다.
 - **개인정보 최소화** — 조회수에 원래 IP를 저장하지 않고, 검색어를 기록하지 않습니다. 메일 발송 실패나 잘못된 토큰이 로그에 남지 않게 예외 종류만 기록합니다. 신뢰 프록시 대역에서 온 `X-Forwarded-For`만 믿습니다.
-- **사진 버킷** — 익명에게는 파일 받기(GetObject)만 열고 목록 조회는 막아 비공개 글의 사진 주소가 드러나지 않습니다.
+- **사진 버킷** — 익명에게는 사진(`images/`·`profiles/`)의 파일 받기(GetObject)만 열고 버킷 목록 조회는 막습니다. 그래서 목록으로 비공개 글의 사진 주소를 찾아낼 수는 없지만, 사진 주소를 아는 사람은 그 파일을 받을 수 있습니다.
 - **네트워크 정책** — PostgreSQL·Redis는 앱 파드에서만, MinIO는 앱과 인그레스에서만 접속됩니다.
 - **비밀값** — 접속 정보는 저장소에 넣지 않고 쿠버네티스 Secret·GitHub Secret으로만 넣습니다. `deploy/scripts/check-no-secrets.sh`가 CI에서 검사합니다.
 
@@ -235,7 +238,7 @@ GitHub Actions로 테스트하고 이미지를 만들어 GHCR에 올린 뒤, kus
 
 | 경로 | 설명 |
 | --- | --- |
-| [app/backend](https://github.com/AIGJ-01-002-blog/docs/tree/main/app/backend) | 백엔드 — Spring Boot 4.1, Java 21. 기능 모듈, Flyway 마이그레이션(V1~V10), 테스트 |
+| [app/backend](https://github.com/AIGJ-01-002-blog/docs/tree/main/app/backend) | 백엔드 — Spring Boot 4.1, Java 21. 기능 모듈, Flyway 마이그레이션(V1~V12), 테스트 |
 | [app/frontend](https://github.com/AIGJ-01-002-blog/docs/tree/main/app/frontend) | 프론트엔드 — React 19 SPA, TypeScript, Vite. 화면, 자동 저장(IndexedDB), 다크 모드 |
 | [deploy](https://github.com/AIGJ-01-002-blog/docs/tree/main/deploy) | 배포 — Dockerfile, 쿠버네티스 매니페스트(base·selfhosted·nhn·local), 배포·롤백·비밀값 검사 스크립트 |
 | [.github](https://github.com/AIGJ-01-002-blog/docs/tree/main/.github) | CI/CD — 백엔드·화면 테스트, 이미지 빌드·배포, 릴리스, Discord·텔레그램 알림 |
@@ -289,11 +292,11 @@ GitHub Actions로 테스트하고 이미지를 만들어 GHCR에 올린 뒤, kus
 # 의존 서비스
 docker compose -f app/compose.yaml up -d
 
-# 백엔드
+# 백엔드 (터미널 1)
 cd app/backend
 DEV_LOGIN_ENABLED=true SITE_BASE_URL=http://localhost:5173 ./mvnw spring-boot:run
 
-# 프론트엔드
+# 프론트엔드 (터미널 2, 저장소 루트에서)
 cd app/frontend
 npm install
 npm run dev        # http://localhost:5173
@@ -312,7 +315,7 @@ npm run dev        # http://localhost:5173
 | Spring Security · OAuth2 Client | Boot 4.1 | account | GitHub·Google 로그인, 세션, CSRF, 경로별 권한 |
 | Spring Data JPA (Hibernate) | Boot 4.1 | 도메인 전체 | 회원·글·댓글 등 도메인 저장 |
 | Spring Session Data Redis · Spring Data Redis | Boot 4.1 | 세션, 요청 제한, 조회수, 캐시 | 파드 여러 개가 같은 세션을 보고, 동시 요청도 Redis 스크립트 하나로 판정합니다 |
-| Flyway | Boot 4.1 | DB | 스키마를 V1~V10 마이그레이션으로 관리하고 앱 시작 때 적용합니다 |
+| Flyway | Boot 4.1 | DB | 스키마를 V1~V12 마이그레이션으로 관리하고 앱 시작 때 적용합니다 |
 | commonmark-java (+ GFM 확장) | 0.30.0 | 본문 렌더링 | Markdown → HTML. 표·취소선·체크 목록·자동 링크·제목 앵커 |
 | OWASP Java HTML Sanitizer | 20260924.2 | 본문 정화 | 렌더링한 HTML을 허용 목록으로 정화해 XSS를 막습니다 |
 | AWS SDK for Java (S3) | 2.55.12 | media | MinIO·S3에 사진과 첨부를 올립니다 |
@@ -358,6 +361,8 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.25.0 | 2026-10-08 | 가입 화면에서 AI 기능 동의를 선택 항목으로 받기 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.25.0) |
+| v1.24.0 | 2026-10-08 | 모던 개발 블로그 화면 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.24.0) |
 | v1.23.2 | 2026-10-08 | 운영 메일 계정 주소 바로잡기 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.23.2) |
 | v1.23.1 | 2026-10-08 | SonarQube 보안·신뢰성 지적 정리 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.23.1) |
 | v1.23.0 | 2026-10-08 | 글 썸네일 고르기 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.23.0) |
