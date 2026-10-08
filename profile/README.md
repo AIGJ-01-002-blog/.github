@@ -361,6 +361,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.32.1 | 2026-10-08 | 학교 서버 클러스터 상태를 읽기 전용으로 보는 "클러스터 상태" 실행(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.32.1) |
 | v1.32.0 | 2026-10-08 | 하이브리드 검색: 검색어가 없어도 뜻이 비슷한 글 찾기 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.32.0) |
 | v1.31.0 | 2026-10-08 | AI가 발행한 글 고치기·사진 올리기·내 글 전체 검색 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.31.0) |
 | v1.30.0 | 2026-10-08 | 버튼 툴팁, 모바일 아래 탭, 에디터 서식 도구 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.30.0) |
