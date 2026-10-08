@@ -9,9 +9,9 @@
 
 # devlog
 
-**글만 올리고 끝나는 블로그는 많습니다. devlog는 쓰는 순간부터 읽히는 순간까지 챙깁니다.**
+**코딩은 AI와, 기록은 devlog가.**
 
-쓰기 → 자동 저장 → 발행 → 읽기 → 반응까지, 개발자를 위한 velog형 블로그 플랫폼
+Claude·Cursor에 devlog MCP를 연결하면 AI가 개발 일지 초안을 써 주는 개발자 블로그. 쓰기 → 자동 저장 → 발행 → 읽기 → 반응까지 챙깁니다
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/AIGJ-01-002-blog/docs/blob/main/LICENSE)
 [![Release](https://img.shields.io/github/v/release/AIGJ-01-002-blog/docs?color=10b981&label=release)](https://github.com/AIGJ-01-002-blog/docs/releases/latest)
@@ -25,7 +25,7 @@
 </div>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/docs/main/docs/images/home.webp" alt="devlog 홈 — 최신·트렌딩 탭과 글 카드" width="860" />
+  <img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/docs/main/docs/images/home.webp" alt="devlog 홈 — 슬로건, AI 개발 일지 예시, 글 카드" width="860" />
 </p>
 
 이름은 **개발 기록(development log)** 에서 따왔습니다. 정식 주소로 [devlog.life](https://devlog.life) 도메인을 마련해 두었고, 운영 서버가 정해지면 이 주소로 엽니다.
@@ -148,7 +148,7 @@ flowchart LR
     T[텔레그램] -->|봇 API| A
     I -->|/ · /api · /rss| A[blog-app<br/>Spring Boot 4.1 · Java 21<br/>파드 여러 개]
     I -->|/blog-images| M[(MinIO / S3<br/>사진·첨부)]
-    A --> P[(PostgreSQL<br/>Flyway V1~V12)]
+    A --> P[(PostgreSQL<br/>Flyway V1~V13)]
     A --> R[(Redis<br/>세션·요청 제한·조회수·캐시)]
     A --> M
     A -.선택.-> G[Google Gemini]
@@ -238,7 +238,7 @@ GitHub Actions로 테스트하고 이미지를 만들어 GHCR에 올린 뒤, kus
 
 | 경로 | 설명 |
 | --- | --- |
-| [app/backend](https://github.com/AIGJ-01-002-blog/docs/tree/main/app/backend) | 백엔드 — Spring Boot 4.1, Java 21. 기능 모듈, Flyway 마이그레이션(V1~V12), 테스트 |
+| [app/backend](https://github.com/AIGJ-01-002-blog/docs/tree/main/app/backend) | 백엔드 — Spring Boot 4.1, Java 21. 기능 모듈, Flyway 마이그레이션(V1~V13), 테스트 |
 | [app/frontend](https://github.com/AIGJ-01-002-blog/docs/tree/main/app/frontend) | 프론트엔드 — React 19 SPA, TypeScript, Vite. 화면, 자동 저장(IndexedDB), 다크 모드 |
 | [deploy](https://github.com/AIGJ-01-002-blog/docs/tree/main/deploy) | 배포 — Dockerfile, 쿠버네티스 매니페스트(base·selfhosted·nhn·local), 배포·롤백·비밀값 검사 스크립트 |
 | [.github](https://github.com/AIGJ-01-002-blog/docs/tree/main/.github) | CI/CD — 백엔드·화면 테스트, 이미지 빌드·배포, 릴리스, Discord·텔레그램 알림 |
@@ -315,7 +315,7 @@ npm run dev        # http://localhost:5173
 | Spring Security · OAuth2 Client | Boot 4.1 | account | GitHub·Google 로그인, 세션, CSRF, 경로별 권한 |
 | Spring Data JPA (Hibernate) | Boot 4.1 | 도메인 전체 | 회원·글·댓글 등 도메인 저장 |
 | Spring Session Data Redis · Spring Data Redis | Boot 4.1 | 세션, 요청 제한, 조회수, 캐시 | 파드 여러 개가 같은 세션을 보고, 동시 요청도 Redis 스크립트 하나로 판정합니다 |
-| Flyway | Boot 4.1 | DB | 스키마를 V1~V12 마이그레이션으로 관리하고 앱 시작 때 적용합니다 |
+| Flyway | Boot 4.1 | DB | 스키마를 V1~V13 마이그레이션으로 관리하고 앱 시작 때 적용합니다 |
 | commonmark-java (+ GFM 확장) | 0.30.0 | 본문 렌더링 | Markdown → HTML. 표·취소선·체크 목록·자동 링크·제목 앵커 |
 | OWASP Java HTML Sanitizer | 20260924.2 | 본문 정화 | 렌더링한 HTML을 허용 목록으로 정화해 XSS를 막습니다 |
 | AWS SDK for Java (S3) | 2.55.12 | media | MinIO·S3에 사진과 첨부를 올립니다 |
@@ -361,6 +361,11 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.27.0 | 2026-10-08 | devlog MCP 서버, ChatGPT·Codex 연결, 집 PC AI 먼저 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.27.0) |
+| v1.26.1 | 2026-10-08 | 배포가 Gemini 열쇠와 집 PC Ollama 설정을 앱에 넣기(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.26.1) |
+| v1.26.0 | 2026-10-08 | MCP 개발 일지 중심 첫 화면과 AI 연결 안내 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.26.0) |
+| v1.25.2 | 2026-10-08 | 글 목록·상세 조회를 글 모듈로 옮겨 정리(동작 변화 없음) | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.25.2) |
+| v1.25.1 | 2026-10-08 | 운영 DB를 pgvector가 들어 있는 PostgreSQL로 바꾸기(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.25.1) |
 | v1.25.0 | 2026-10-08 | 가입 화면에서 AI 기능 동의를 선택 항목으로 받기 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.25.0) |
 | v1.24.0 | 2026-10-08 | 모던 개발 블로그 화면 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.24.0) |
 | v1.23.2 | 2026-10-08 | 운영 메일 계정 주소 바로잡기 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.23.2) |
