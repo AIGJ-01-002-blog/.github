@@ -367,6 +367,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.37.1 | 2026-10-08 | /mcp 안내에 Claude 앱 커넥터 연결 방법 추가 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.37.1) |
 | v1.37.0 | 2026-10-08 | 머리말 메뉴 재배치, 옆 탭으로 나눈 내 설정, 새로 꾸민 내 블로그·내 글 관리, 브라우저용 RSS 안내 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.37.0) |
 | v1.36.0 | 2026-10-08 | 검색 엔진 등록: 사이트맵, robots.txt, 네이버 소유 확인 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.36.0) |
 | v1.35.0 | 2026-10-08 | 관리자 페이지: 통계 대시보드, 글·회원 관리, 매니저 권한 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.35.0) |
