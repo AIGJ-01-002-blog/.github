@@ -1,10 +1,10 @@
 <div align="center">
 
-🌐 **한국어** | **[English](https://github.com/AIGJ-01-002-blog/docs/blob/main/README.en.md)** | **[日本語](https://github.com/AIGJ-01-002-blog/docs/blob/main/README.ja.md)** | **[简体中文](https://github.com/AIGJ-01-002-blog/docs/blob/main/README.zh.md)**
+🌐 **한국어** | **[English](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/README.en.md)** | **[日本語](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/README.ja.md)** | **[简体中文](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/README.zh.md)**
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AIGJ-01-002-blog/docs/main/docs/images/logo-dark.png" />
-  <img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/docs/main/docs/images/logo-light.png" alt="devlog" width="72" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/logo-dark.png" />
+  <img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/logo-light.png" alt="devlog" width="72" />
 </picture>
 
 # devlog
@@ -13,19 +13,19 @@
 
 Claude·Cursor에 devlog MCP를 연결하면 AI가 개발 일지 초안을 써 주는 개발자 블로그. 쓰기 → 자동 저장 → 발행 → 읽기 → 반응까지 챙깁니다
 
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/AIGJ-01-002-blog/docs/blob/main/LICENSE)
-[![Release](https://img.shields.io/github/v/release/AIGJ-01-002-blog/docs?color=10b981&label=release)](https://github.com/AIGJ-01-002-blog/docs/releases/latest)
-[![Backend CI](https://github.com/AIGJ-01-002-blog/docs/actions/workflows/backend-ci.yml/badge.svg)](https://github.com/AIGJ-01-002-blog/docs/actions/workflows/backend-ci.yml)
-[![Frontend CI](https://github.com/AIGJ-01-002-blog/docs/actions/workflows/frontend-ci.yml/badge.svg)](https://github.com/AIGJ-01-002-blog/docs/actions/workflows/frontend-ci.yml)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/v/release/AIGJ-01-002-blog/Devlog?color=10b981&label=release)](https://github.com/AIGJ-01-002-blog/Devlog/releases/latest)
+[![Backend CI](https://github.com/AIGJ-01-002-blog/Devlog/actions/workflows/backend-ci.yml/badge.svg)](https://github.com/AIGJ-01-002-blog/Devlog/actions/workflows/backend-ci.yml)
+[![Frontend CI](https://github.com/AIGJ-01-002-blog/Devlog/actions/workflows/frontend-ci.yml/badge.svg)](https://github.com/AIGJ-01-002-blog/Devlog/actions/workflows/frontend-ci.yml)
 [![Domain](https://img.shields.io/badge/domain-devlog.life%20(준비%20중)-0ea5e9.svg)](#배포)
 [![Stack](https://img.shields.io/badge/Java%2021%20·%20Spring%20Boot%204.1%20·%20React%2019-f97316.svg)](#기술-스택)
 
-[직접 실행하기](#직접-실행하기) · [변경 기록](https://github.com/AIGJ-01-002-blog/docs/blob/main/CHANGELOG.md) · [릴리스](https://github.com/AIGJ-01-002-blog/docs/releases) · [설계 문서](https://github.com/AIGJ-01-002-blog/docs/tree/main/docs) · [기능 명세](https://github.com/AIGJ-01-002-blog/docs/tree/main/specs)
+[직접 실행하기](#직접-실행하기) · [변경 기록](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/CHANGELOG.md) · [릴리스](https://github.com/AIGJ-01-002-blog/Devlog/releases) · [설계 문서](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/docs) · [기능 명세](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/specs)
 
 </div>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/docs/main/docs/images/home.webp" alt="devlog 홈 — 슬로건, AI 개발 일지 예시, 글 카드" width="860" />
+  <img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/home.webp" alt="devlog 홈 — 슬로건, AI 개발 일지 예시, 글 카드" width="860" />
 </p>
 
 이름은 **개발 기록(development log)** 에서 따왔습니다. 정식 주소로 [devlog.life](https://devlog.life) 도메인을 마련해 두었고, 운영 서버가 정해지면 이 주소로 엽니다.
@@ -93,16 +93,16 @@ AI 사용에 동의했다면 AI가 제목을 붙이고 문장을 다듬고, 아�
 
 <table>
 <tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/docs/main/docs/images/editor.webp" alt="글쓰기 화면" /><br/><b>글쓰기</b> — Markdown과 실시간 미리보기, 자동 저장, 시리즈, 첨부파일</td>
-<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/docs/main/docs/images/post-detail.webp" alt="글 상세" /><br/><b>글 읽기</b> — 목차, 읽는 시간, 태그, 코드 강조, 공개 범위 바꾸기</td>
+<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/editor.webp" alt="글쓰기 화면" /><br/><b>글쓰기</b> — Markdown과 실시간 미리보기, 자동 저장, 시리즈, 첨부파일</td>
+<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/post-detail.webp" alt="글 상세" /><br/><b>글 읽기</b> — 목차, 읽는 시간, 태그, 코드 강조, 공개 범위 바꾸기</td>
 </tr>
 <tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/docs/main/docs/images/blog.webp" alt="개인 블로그" /><br/><b>개인 블로그</b> — 글·시리즈·소개 탭, 블로그 안 검색, 태그별 글 수, RSS</td>
-<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/docs/main/docs/images/notifications.webp" alt="알림" /><br/><b>알림</b> — 댓글·답글·좋아요·팔로우를 묶어서, 텔레그램으로도</td>
+<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/blog.webp" alt="개인 블로그" /><br/><b>개인 블로그</b> — 글·시리즈·소개 탭, 블로그 안 검색, 태그별 글 수, RSS</td>
+<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/notifications.webp" alt="알림" /><br/><b>알림</b> — 댓글·답글·좋아요·팔로우를 묶어서, 텔레그램으로도</td>
 </tr>
 <tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/docs/main/docs/images/search.webp" alt="검색" /><br/><b>검색</b> — 글·사람 탭, 관련도순, 검색어 강조</td>
-<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/docs/main/docs/images/home-dark.webp" alt="다크 모드" /><br/><b>다크 모드</b> — 시스템·라이트·다크, 깜빡임 없이</td>
+<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/search.webp" alt="검색" /><br/><b>검색</b> — 글·사람 탭, 관련도순, 검색어 강조</td>
+<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/home-dark.webp" alt="다크 모드" /><br/><b>다크 모드</b> — 시스템·라이트·다크, 깜빡임 없이</td>
 </tr>
 </table>
 
@@ -140,7 +140,7 @@ AI 사용에 동의했다면 AI가 제목을 붙이고 문장을 다듬고, 아�
 
 ## 아키텍처
 
-devlog는 **모듈러 모놀리스**입니다. Spring Boot 앱 하나가 React 화면(정적 파일)과 API를 함께 내주고, 기능은 패키지 단위 모듈로 나눕니다. 모듈끼리는 도메인 사건(예: 좋아요가 생김 → 알림)으로 느슨하게 잇습니다. 설계 근거는 [docs/02-architecture.md](https://github.com/AIGJ-01-002-blog/docs/blob/main/docs/02-architecture.md)에 있습니다.
+devlog는 **모듈러 모놀리스**입니다. Spring Boot 앱 하나가 React 화면(정적 파일)과 API를 함께 내주고, 기능은 패키지 단위 모듈로 나눕니다. 모듈끼리는 도메인 사건(예: 좋아요가 생김 → 알림)으로 느슨하게 잇습니다. 설계 근거는 [docs/02-architecture.md](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/docs/02-architecture.md)에 있습니다.
 
 ```mermaid
 flowchart LR
@@ -230,7 +230,7 @@ sequenceDiagram
 
 GitHub Actions로 테스트하고 이미지를 만들어 GHCR에 올린 뒤, kustomize 오버레이로 쿠버네티스에 배포합니다. `deploy/scripts/rollout.sh`는 새 파드가 모두 준비(`/actuator/health/readiness`)되기를 기다리고, 시간 안에 안 되면 직전 버전으로 자동 롤백합니다. 새 파드가 준비되기 전에는 옛 파드를 내리지 않아(`maxUnavailable: 0`) 배포와 롤백 중에도 서비스가 끊기지 않습니다.
 
-지금 운영 기준은 `overlays/selfhosted`입니다. PostgreSQL 17·Redis 7.4·MinIO를 같은 클러스터 안에 영구 볼륨과 함께 띄우며, 테스트 클러스터(k3s)에서 가입 → 사진을 넣은 글 발행 → 비회원 읽기까지 확인했습니다. 학교 공용 인프라(`overlays/nhn`)는 학교망에서만 닿아 전환을 보류했고, 운영 서버와 [devlog.life](https://devlog.life) 연결은 준비 중입니다. 자세한 내용은 [deploy/README.md](https://github.com/AIGJ-01-002-blog/docs/blob/main/deploy/README.md)에 있습니다.
+지금 운영 기준은 `overlays/selfhosted`입니다. PostgreSQL 17·Redis 7.4·MinIO를 같은 클러스터 안에 영구 볼륨과 함께 띄우며, 테스트 클러스터(k3s)에서 가입 → 사진을 넣은 글 발행 → 비회원 읽기까지 확인했습니다. 학교 공용 인프라(`overlays/nhn`)는 학교망에서만 닿아 전환을 보류했고, 운영 서버와 [devlog.life](https://devlog.life) 연결은 준비 중입니다. 자세한 내용은 [deploy/README.md](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/deploy/README.md)에 있습니다.
 
 ## 저장소
 
@@ -238,13 +238,13 @@ GitHub Actions로 테스트하고 이미지를 만들어 GHCR에 올린 뒤, kus
 
 | 경로 | 설명 |
 | --- | --- |
-| [app/backend](https://github.com/AIGJ-01-002-blog/docs/tree/main/app/backend) | 백엔드 — Spring Boot 4.1, Java 21. 기능 모듈, Flyway 마이그레이션(V1~V13), 테스트 |
-| [app/frontend](https://github.com/AIGJ-01-002-blog/docs/tree/main/app/frontend) | 프론트엔드 — React 19 SPA, TypeScript, Vite. 화면, 자동 저장(IndexedDB), 다크 모드 |
-| [deploy](https://github.com/AIGJ-01-002-blog/docs/tree/main/deploy) | 배포 — Dockerfile, 쿠버네티스 매니페스트(base·selfhosted·nhn·local), 배포·롤백·비밀값 검사 스크립트 |
-| [.github](https://github.com/AIGJ-01-002-blog/docs/tree/main/.github) | CI/CD — 백엔드·화면 테스트, 이미지 빌드·배포, 릴리스, Discord·텔레그램 알림 |
-| [specs](https://github.com/AIGJ-01-002-blog/docs/tree/main/specs) | 기능 명세 — [GitHub Spec Kit](https://github.com/github/spec-kit) 흐름의 기능별 spec·plan·tasks(001~044) |
-| [docs](https://github.com/AIGJ-01-002-blog/docs/tree/main/docs) | 설계 문서 — 공통 요구사항, 아키텍처, 통합 ERD, 기능별 설계, 권한 표 |
-| [erd](https://github.com/AIGJ-01-002-blog/docs/tree/main/erd) · [scripts](https://github.com/AIGJ-01-002-blog/docs/tree/main/scripts) · [verification](https://github.com/AIGJ-01-002-blog/docs/tree/main/verification) | 기준 스키마와 동작 테스트, 설계 검증 스크립트와 보고서 |
+| [app/backend](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/app/backend) | 백엔드 — Spring Boot 4.1, Java 21. 기능 모듈, Flyway 마이그레이션(V1~V13), 테스트 |
+| [app/frontend](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/app/frontend) | 프론트엔드 — React 19 SPA, TypeScript, Vite. 화면, 자동 저장(IndexedDB), 다크 모드 |
+| [deploy](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/deploy) | 배포 — Dockerfile, 쿠버네티스 매니페스트(base·selfhosted·nhn·local), 배포·롤백·비밀값 검사 스크립트 |
+| [.github](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/.github) | CI/CD — 백엔드·화면 테스트, 이미지 빌드·배포, 릴리스, Discord·텔레그램 알림 |
+| [specs](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/specs) | 기능 명세 — [GitHub Spec Kit](https://github.com/github/spec-kit) 흐름의 기능별 spec·plan·tasks(001~044) |
+| [docs](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/docs) | 설계 문서 — 공통 요구사항, 아키텍처, 통합 ERD, 기능별 설계, 권한 표 |
+| [erd](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/erd) · [scripts](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/scripts) · [verification](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/verification) | 기준 스키마와 동작 테스트, 설계 검증 스크립트와 보고서 |
 
 ## 직접 실행하기
 
@@ -271,7 +271,7 @@ GitHub Actions로 테스트하고 이미지를 만들어 GHCR에 올린 뒤, kus
 
 ### 환경변수
 
-로컬은 기본값으로 돌아갑니다. 운영 값은 쿠버네티스 Secret으로만 넣고, 전체 목록과 설명은 [deploy/README.md](https://github.com/AIGJ-01-002-blog/docs/blob/main/deploy/README.md)와 `deploy/k8s/overlays/*/secret.env.example`에 있습니다.
+로컬은 기본값으로 돌아갑니다. 운영 값은 쿠버네티스 Secret으로만 넣고, 전체 목록과 설명은 [deploy/README.md](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/deploy/README.md)와 `deploy/k8s/overlays/*/secret.env.example`에 있습니다.
 
 | 변수 | 설명 | 비어 있으면 |
 | --- | --- | --- |
@@ -357,67 +357,67 @@ npm run dev        # http://localhost:5173
 
 ## 릴리스
 
-[Semantic Versioning](https://semver.org/lang/ko/)을 따릅니다. 기능이 늘면 Minor, 고치기만 하면 Patch를 올리고, API·스키마 호환이 깨지면 Major를 올립니다. [CHANGELOG.md](https://github.com/AIGJ-01-002-blog/docs/blob/main/CHANGELOG.md)의 맨 위 버전이 `main`에 들어오면 `release.yml`이 git 태그(`vX.Y.Z`)와 [GitHub Release](https://github.com/AIGJ-01-002-blog/docs/releases)를 만듭니다.
+[Semantic Versioning](https://semver.org/lang/ko/)을 따릅니다. 기능이 늘면 Minor, 고치기만 하면 Patch를 올리고, API·스키마 호환이 깨지면 Major를 올립니다. [CHANGELOG.md](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/CHANGELOG.md)의 맨 위 버전이 `main`에 들어오면 `release.yml`이 git 태그(`vX.Y.Z`)와 [GitHub Release](https://github.com/AIGJ-01-002-blog/Devlog/releases)를 만듭니다.
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
-| v1.27.1 | 2026-10-08 | 학교 실습 서버에 쿠버네티스(k3d)로 배포(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.27.1) |
-| v1.27.0 | 2026-10-08 | devlog MCP 서버, ChatGPT·Codex 연결, 집 PC AI 먼저 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.27.0) |
-| v1.26.1 | 2026-10-08 | 배포가 Gemini 열쇠와 집 PC Ollama 설정을 앱에 넣기(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.26.1) |
-| v1.26.0 | 2026-10-08 | MCP 개발 일지 중심 첫 화면과 AI 연결 안내 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.26.0) |
-| v1.25.2 | 2026-10-08 | 글 목록·상세 조회를 글 모듈로 옮겨 정리(동작 변화 없음) | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.25.2) |
-| v1.25.1 | 2026-10-08 | 운영 DB를 pgvector가 들어 있는 PostgreSQL로 바꾸기(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.25.1) |
-| v1.25.0 | 2026-10-08 | 가입 화면에서 AI 기능 동의를 선택 항목으로 받기 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.25.0) |
-| v1.24.0 | 2026-10-08 | 모던 개발 블로그 화면 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.24.0) |
-| v1.23.2 | 2026-10-08 | 운영 메일 계정 주소 바로잡기 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.23.2) |
-| v1.23.1 | 2026-10-08 | SonarQube 보안·신뢰성 지적 정리 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.23.1) |
-| v1.23.0 | 2026-10-08 | 글 썸네일 고르기 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.23.0) |
-| v1.22.3 | 2026-10-08 | Oracle 무료 VM 운영 서버와 devlog.life 연결 준비(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.22.3) |
-| v1.22.2 | 2026-10-08 | DB 백업, 무중단 배포 문서화, 메일 비밀번호가 없을 때 발송 끄기(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.22.2) |
-| v1.22.1 | 2026-10-08 | 새 로고 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.22.1) |
-| v1.22.0 | 2026-10-08 | 글 짧은 소개 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.22.0) |
-| v1.21.0 | 2026-10-08 | 글 아래 작성자 소셜 정보 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.21.0) |
-| v1.20.0 | 2026-10-08 | 블로그 소셜 정보(이메일·GitHub·X·Facebook·홈페이지) | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.20.0) |
-| v1.19.0 | 2026-10-08 | 블로그 소개 탭 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.19.0) |
-| v1.18.1 | 2026-10-08 | 메일 발송 실패 기록에서 받는 사람 주소 빼기 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.18.1) |
-| v1.18.0 | 2026-10-08 | 이전·다음 글 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.18.0) |
-| v1.17.0 | 2026-10-08 | 글 공유 버튼 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.17.0) |
-| v1.16.1 ~ v1.16.11 | 2026-10-08 | 성능(첫 화면 JS, 캐시·압축, 사진 자리), 접근성(건너뛰기 링크, 대화상자 초점, 움직임 줄이기), 오류 처리·로그 보호 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.16.11) |
-| v1.16.0 | 2026-10-08 | 좋아한 글 모아 보기 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.16.0) |
-| v1.15.0 | 2026-10-08 | RSS 구독 — 블로그별·전체 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.15.0) |
-| v1.14.0 | 2026-10-08 | 글 목차와 읽는 시간 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.14.0) |
-| v1.13.0 | 2026-10-08 | 시리즈 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.13.0) |
-| v1.12.0 | 2026-10-07 | 텔레그램 연결 — 알림 받기, 메모로 임시글 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.12.0) |
-| v1.11.0 | 2026-10-07 | 첨부파일 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.11.0) |
-| v1.10.0 | 2026-10-07 | 다크 모드 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.10.0) |
+| v1.27.1 | 2026-10-08 | 학교 실습 서버에 쿠버네티스(k3d)로 배포(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.1) |
+| v1.27.0 | 2026-10-08 | devlog MCP 서버, ChatGPT·Codex 연결, 집 PC AI 먼저 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.0) |
+| v1.26.1 | 2026-10-08 | 배포가 Gemini 열쇠와 집 PC Ollama 설정을 앱에 넣기(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.26.1) |
+| v1.26.0 | 2026-10-08 | MCP 개발 일지 중심 첫 화면과 AI 연결 안내 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.26.0) |
+| v1.25.2 | 2026-10-08 | 글 목록·상세 조회를 글 모듈로 옮겨 정리(동작 변화 없음) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.25.2) |
+| v1.25.1 | 2026-10-08 | 운영 DB를 pgvector가 들어 있는 PostgreSQL로 바꾸기(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.25.1) |
+| v1.25.0 | 2026-10-08 | 가입 화면에서 AI 기능 동의를 선택 항목으로 받기 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.25.0) |
+| v1.24.0 | 2026-10-08 | 모던 개발 블로그 화면 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.24.0) |
+| v1.23.2 | 2026-10-08 | 운영 메일 계정 주소 바로잡기 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.23.2) |
+| v1.23.1 | 2026-10-08 | SonarQube 보안·신뢰성 지적 정리 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.23.1) |
+| v1.23.0 | 2026-10-08 | 글 썸네일 고르기 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.23.0) |
+| v1.22.3 | 2026-10-08 | Oracle 무료 VM 운영 서버와 devlog.life 연결 준비(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.22.3) |
+| v1.22.2 | 2026-10-08 | DB 백업, 무중단 배포 문서화, 메일 비밀번호가 없을 때 발송 끄기(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.22.2) |
+| v1.22.1 | 2026-10-08 | 새 로고 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.22.1) |
+| v1.22.0 | 2026-10-08 | 글 짧은 소개 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.22.0) |
+| v1.21.0 | 2026-10-08 | 글 아래 작성자 소셜 정보 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.21.0) |
+| v1.20.0 | 2026-10-08 | 블로그 소셜 정보(이메일·GitHub·X·Facebook·홈페이지) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.20.0) |
+| v1.19.0 | 2026-10-08 | 블로그 소개 탭 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.19.0) |
+| v1.18.1 | 2026-10-08 | 메일 발송 실패 기록에서 받는 사람 주소 빼기 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.18.1) |
+| v1.18.0 | 2026-10-08 | 이전·다음 글 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.18.0) |
+| v1.17.0 | 2026-10-08 | 글 공유 버튼 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.17.0) |
+| v1.16.1 ~ v1.16.11 | 2026-10-08 | 성능(첫 화면 JS, 캐시·압축, 사진 자리), 접근성(건너뛰기 링크, 대화상자 초점, 움직임 줄이기), 오류 처리·로그 보호 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.16.11) |
+| v1.16.0 | 2026-10-08 | 좋아한 글 모아 보기 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.16.0) |
+| v1.15.0 | 2026-10-08 | RSS 구독 — 블로그별·전체 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.15.0) |
+| v1.14.0 | 2026-10-08 | 글 목차와 읽는 시간 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.14.0) |
+| v1.13.0 | 2026-10-08 | 시리즈 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.13.0) |
+| v1.12.0 | 2026-10-07 | 텔레그램 연결 — 알림 받기, 메모로 임시글 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.12.0) |
+| v1.11.0 | 2026-10-07 | 첨부파일 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.11.0) |
+| v1.10.0 | 2026-10-07 | 다크 모드 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.10.0) |
 
 <details>
 <summary>이전 버전 (v0.1.0 ~ v1.9.0)</summary>
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
-| v1.9.0 | 2026-10-07 | 회원 탈퇴·복구 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.9.0) |
-| v1.8.0 | 2026-10-07 | 신고·숨김·정지 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.8.0) |
-| v1.7.0 | 2026-10-07 | AI 태그 추천 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.7.0) |
-| v1.6.0 | 2026-10-07 | 홈 트렌딩 탭 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.6.0) |
-| v1.5.0 | 2026-10-07 | 팔로우와 팔로잉 피드 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.5.0) |
-| v1.4.0 | 2026-10-07 | 앱 안 알림 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.4.0) |
-| v1.3.0 | 2026-10-07 | 글·사람 검색 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.3.0) |
-| v1.2.0 | 2026-10-07 | 조회수 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.2.0) |
-| v1.1.0 | 2026-10-07 | 좋아요 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.1.0) |
-| v1.0.0 | 2026-10-07 | 첫 정식 버전. 클러스터 안 구성(selfhosted)에서 처음부터 끝까지 동작 확인 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v1.0.0) |
-| v0.12.0 | 2026-10-07 | 친구에게만 공개 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v0.12.0) |
-| v0.11.0 | 2026-10-07 | 댓글과 답글 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v0.11.0) |
-| v0.10.0 | 2026-10-07 | 태그 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v0.10.0) |
-| v0.9.0 | 2026-10-07 | 사진과 GIF, 클러스터 안 배포 구성 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v0.9.0) |
-| v0.8.0 | 2026-10-07 | 친구와 최근 활동 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v0.8.0) |
-| v0.7.0 | 2026-10-07 | 휴지통 30일 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v0.7.0) |
-| v0.6.0 | 2026-10-07 | 오프라인 자동 저장 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v0.6.0) |
-| v0.5.0 | 2026-10-07 | 프로필·설정 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v0.5.0) |
-| v0.4.0 · v0.4.1 | 2026-10-07 | 이메일·Google 가입과 로그인 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v0.4.1) |
-| v0.3.0 | 2026-10-07 | DB 구조 정규화(V3) | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v0.3.0) |
-| v0.2.0 | 2026-10-07 | 화면(React) 연결 — 가입부터 글쓰기·발행·읽기까지 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v0.2.0) |
-| v0.1.0 | 2026-10-07 | 백엔드 첫 릴리스 | [보기](https://github.com/AIGJ-01-002-blog/docs/releases/tag/v0.1.0) |
+| v1.9.0 | 2026-10-07 | 회원 탈퇴·복구 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.9.0) |
+| v1.8.0 | 2026-10-07 | 신고·숨김·정지 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.8.0) |
+| v1.7.0 | 2026-10-07 | AI 태그 추천 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.7.0) |
+| v1.6.0 | 2026-10-07 | 홈 트렌딩 탭 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.6.0) |
+| v1.5.0 | 2026-10-07 | 팔로우와 팔로잉 피드 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.5.0) |
+| v1.4.0 | 2026-10-07 | 앱 안 알림 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.4.0) |
+| v1.3.0 | 2026-10-07 | 글·사람 검색 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.3.0) |
+| v1.2.0 | 2026-10-07 | 조회수 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.2.0) |
+| v1.1.0 | 2026-10-07 | 좋아요 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.1.0) |
+| v1.0.0 | 2026-10-07 | 첫 정식 버전. 클러스터 안 구성(selfhosted)에서 처음부터 끝까지 동작 확인 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.0.0) |
+| v0.12.0 | 2026-10-07 | 친구에게만 공개 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v0.12.0) |
+| v0.11.0 | 2026-10-07 | 댓글과 답글 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v0.11.0) |
+| v0.10.0 | 2026-10-07 | 태그 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v0.10.0) |
+| v0.9.0 | 2026-10-07 | 사진과 GIF, 클러스터 안 배포 구성 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v0.9.0) |
+| v0.8.0 | 2026-10-07 | 친구와 최근 활동 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v0.8.0) |
+| v0.7.0 | 2026-10-07 | 휴지통 30일 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v0.7.0) |
+| v0.6.0 | 2026-10-07 | 오프라인 자동 저장 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v0.6.0) |
+| v0.5.0 | 2026-10-07 | 프로필·설정 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v0.5.0) |
+| v0.4.0 · v0.4.1 | 2026-10-07 | 이메일·Google 가입과 로그인 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v0.4.1) |
+| v0.3.0 | 2026-10-07 | DB 구조 정규화(V3) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v0.3.0) |
+| v0.2.0 | 2026-10-07 | 화면(React) 연결 — 가입부터 글쓰기·발행·읽기까지 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v0.2.0) |
+| v0.1.0 | 2026-10-07 | 백엔드 첫 릴리스 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v0.1.0) |
 
 </details>
 
@@ -425,12 +425,12 @@ npm run dev        # http://localhost:5173
 
 버그 제보, 기능 제안, 풀 리퀘스트를 모두 환영합니다.
 
-- **버그·제안** — [Issue](https://github.com/AIGJ-01-002-blog/docs/issues)에 남겨 주세요. 재현 순서, 기대한 동작, 실제 동작, 화면 캡처가 있으면 빨리 고칠 수 있습니다.
-- **기능 추가** — [Spec Kit](https://github.com/github/spec-kit) 흐름을 따릅니다. `specs/NNN-이름/`에 spec·plan·tasks를 먼저 쓰고, 그 명세대로 구현합니다. 원칙은 [.specify/memory/constitution.md](https://github.com/AIGJ-01-002-blog/docs/blob/main/.specify/memory/constitution.md)에 있습니다.
-- **풀 리퀘스트** — 변경 범위를 작게 나누고 테스트를 함께 올려 주세요. 백엔드는 `./mvnw verify`(줄 커버리지 40% 이상), 화면은 `npm run typecheck && npm test && npm run build`가 통과해야 합니다. 바뀐 내용은 [CHANGELOG.md](https://github.com/AIGJ-01-002-blog/docs/blob/main/CHANGELOG.md) 맨 위에 적습니다.
+- **버그·제안** — [Issue](https://github.com/AIGJ-01-002-blog/Devlog/issues)에 남겨 주세요. 재현 순서, 기대한 동작, 실제 동작, 화면 캡처가 있으면 빨리 고칠 수 있습니다.
+- **기능 추가** — [Spec Kit](https://github.com/github/spec-kit) 흐름을 따릅니다. `specs/NNN-이름/`에 spec·plan·tasks를 먼저 쓰고, 그 명세대로 구현합니다. 원칙은 [.specify/memory/constitution.md](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/.specify/memory/constitution.md)에 있습니다.
+- **풀 리퀘스트** — 변경 범위를 작게 나누고 테스트를 함께 올려 주세요. 백엔드는 `./mvnw verify`(줄 커버리지 40% 이상), 화면은 `npm run typecheck && npm test && npm run build`가 통과해야 합니다. 바뀐 내용은 [CHANGELOG.md](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/CHANGELOG.md) 맨 위에 적습니다.
 - **비밀값** — 접속 정보나 비밀번호는 커밋하지 마세요. `deploy/scripts/check-no-secrets.sh`가 CI에서 막습니다.
 - **보안 문제** — 공개 Issue 대신 저장소 관리자에게 먼저 알려 주세요.
 
 ## 라이선스
 
-[Apache License 2.0](https://github.com/AIGJ-01-002-blog/docs/blob/main/LICENSE)으로 배포됩니다.
+[Apache License 2.0](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/LICENSE)으로 배포됩니다.
