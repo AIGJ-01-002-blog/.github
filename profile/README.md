@@ -3,8 +3,8 @@
 🌐 **한국어** | **[English](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/README.en.md)** | **[日本語](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/README.ja.md)** | **[简体中文](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/README.zh.md)**
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/logo-dark.png" />
-  <img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/logo-light.png" alt="devlog" width="72" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/assets/images/logo-dark.png" />
+  <img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/assets/images/logo-light.png" alt="devlog" width="72" />
 </picture>
 
 # devlog
@@ -20,12 +20,12 @@ Claude·Cursor에 devlog MCP를 연결하면 AI가 개발 일지 초안을 써 �
 [![Domain](https://img.shields.io/badge/domain-devlog.life%20(준비%20중)-0ea5e9.svg)](#배포)
 [![Stack](https://img.shields.io/badge/Java%2021%20·%20Spring%20Boot%204.1%20·%20React%2019-f97316.svg)](#기술-스택)
 
-[직접 실행하기](#직접-실행하기) · [변경 기록](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/CHANGELOG.md) · [릴리스](https://github.com/AIGJ-01-002-blog/Devlog/releases) · [설계 문서](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/docs) · [기능 명세](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/specs)
+[직접 실행하기](#직접-실행하기) · [변경 기록](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/CHANGELOG.md) · [릴리스](https://github.com/AIGJ-01-002-blog/Devlog/releases) · [설계 문서](https://github.com/AIGJ-01-002-blog/docs) · [기능 명세](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/specs)
 
 </div>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/home.webp" alt="devlog 홈 — 슬로건, AI 개발 일지 예시, 글 카드" width="860" />
+  <img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/assets/images/home.webp" alt="devlog 홈 — 슬로건, AI 개발 일지 예시, 글 카드" width="860" />
 </p>
 
 이름은 **개발 기록(development log)** 에서 따왔습니다. 정식 주소로 [devlog.life](https://devlog.life) 도메인을 마련해 두었고, 운영 서버가 정해지면 이 주소로 엽니다.
@@ -93,16 +93,16 @@ AI 사용에 동의했다면 AI가 제목을 붙이고 문장을 다듬고, 아�
 
 <table>
 <tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/editor.webp" alt="글쓰기 화면" /><br/><b>글쓰기</b> — Markdown과 실시간 미리보기, 자동 저장, 시리즈, 첨부파일</td>
-<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/post-detail.webp" alt="글 상세" /><br/><b>글 읽기</b> — 목차, 읽는 시간, 태그, 코드 강조, 공개 범위 바꾸기</td>
+<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/assets/images/editor.webp" alt="글쓰기 화면" /><br/><b>글쓰기</b> — Markdown과 실시간 미리보기, 자동 저장, 시리즈, 첨부파일</td>
+<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/assets/images/post-detail.webp" alt="글 상세" /><br/><b>글 읽기</b> — 목차, 읽는 시간, 태그, 코드 강조, 공개 범위 바꾸기</td>
 </tr>
 <tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/blog.webp" alt="개인 블로그" /><br/><b>개인 블로그</b> — 글·시리즈·소개 탭, 블로그 안 검색, 태그별 글 수, RSS</td>
-<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/notifications.webp" alt="알림" /><br/><b>알림</b> — 댓글·답글·좋아요·팔로우를 묶어서, 텔레그램으로도</td>
+<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/assets/images/blog.webp" alt="개인 블로그" /><br/><b>개인 블로그</b> — 글·시리즈·소개 탭, 블로그 안 검색, 태그별 글 수, RSS</td>
+<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/assets/images/notifications.webp" alt="알림" /><br/><b>알림</b> — 댓글·답글·좋아요·팔로우를 묶어서, 텔레그램으로도</td>
 </tr>
 <tr>
-<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/search.webp" alt="검색" /><br/><b>검색</b> — 글·사람 탭, 관련도순, 검색어 강조</td>
-<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/docs/images/home-dark.webp" alt="다크 모드" /><br/><b>다크 모드</b> — 시스템·라이트·다크, 깜빡임 없이</td>
+<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/assets/images/search.webp" alt="검색" /><br/><b>검색</b> — 글·사람 탭, 관련도순, 검색어 강조</td>
+<td width="50%"><img src="https://raw.githubusercontent.com/AIGJ-01-002-blog/Devlog/main/assets/images/home-dark.webp" alt="다크 모드" /><br/><b>다크 모드</b> — 시스템·라이트·다크, 깜빡임 없이</td>
 </tr>
 </table>
 
@@ -140,7 +140,7 @@ AI 사용에 동의했다면 AI가 제목을 붙이고 문장을 다듬고, 아�
 
 ## 아키텍처
 
-devlog는 **모듈러 모놀리스**입니다. Spring Boot 앱 하나가 React 화면(정적 파일)과 API를 함께 내주고, 기능은 패키지 단위 모듈로 나눕니다. 모듈끼리는 도메인 사건(예: 좋아요가 생김 → 알림)으로 느슨하게 잇습니다. 설계 근거는 [docs/02-architecture.md](https://github.com/AIGJ-01-002-blog/Devlog/blob/main/docs/02-architecture.md)에 있습니다.
+devlog는 **모듈러 모놀리스**입니다. Spring Boot 앱 하나가 React 화면(정적 파일)과 API를 함께 내주고, 기능은 패키지 단위 모듈로 나눕니다. 모듈끼리는 도메인 사건(예: 좋아요가 생김 → 알림)으로 느슨하게 잇습니다. 설계 근거는 [docs/02-architecture.md](https://github.com/AIGJ-01-002-blog/docs/blob/main/design/02-architecture.md)에 있습니다.
 
 ```mermaid
 flowchart LR
@@ -234,7 +234,7 @@ GitHub Actions로 테스트하고 이미지를 만들어 GHCR에 올린 뒤, kus
 
 ## 저장소
 
-모든 코드와 문서를 저장소 하나에서 관리합니다.
+코드는 이 저장소에서, 설계 문서는 문서 저장소 [AIGJ-01-002-blog/docs](https://github.com/AIGJ-01-002-blog/docs)에서 관리합니다.
 
 | 경로 | 설명 |
 | --- | --- |
@@ -243,8 +243,8 @@ GitHub Actions로 테스트하고 이미지를 만들어 GHCR에 올린 뒤, kus
 | [deploy](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/deploy) | 배포 — Dockerfile, 쿠버네티스 매니페스트(base·selfhosted·nhn·local), 배포·롤백·비밀값 검사 스크립트 |
 | [.github](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/.github) | CI/CD — 백엔드·화면 테스트, 이미지 빌드·배포, 릴리스, Discord·텔레그램 알림 |
 | [specs](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/specs) | 기능 명세 — [GitHub Spec Kit](https://github.com/github/spec-kit) 흐름의 기능별 spec·plan·tasks(001~044) |
-| [docs](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/docs) | 설계 문서 — 공통 요구사항, 아키텍처, 통합 ERD, 기능별 설계, 권한 표 |
-| [erd](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/erd) · [scripts](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/scripts) · [verification](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/verification) | 기준 스키마와 동작 테스트, 설계 검증 스크립트와 보고서 |
+| [docs](https://github.com/AIGJ-01-002-blog/docs) | 설계 문서 — 공통 요구사항, 아키텍처, 통합 ERD, 기능별 설계, 권한 표 |
+| [erd](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/erd) · [scripts](https://github.com/AIGJ-01-002-blog/Devlog/tree/main/scripts) | 기준 스키마와 동작 테스트, 설계 검증 스크립트와 보고서 |
 
 ## 직접 실행하기
 
@@ -361,6 +361,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.27.2 | 2026-10-08 | 소스코드와 문서 저장소 분리(문서는 AIGJ-01-002-blog/docs) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.2) |
 | v1.27.1 | 2026-10-08 | 학교 실습 서버에 쿠버네티스(k3d)로 배포(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.1) |
 | v1.27.0 | 2026-10-08 | devlog MCP 서버, ChatGPT·Codex 연결, 집 PC AI 먼저 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.0) |
 | v1.26.1 | 2026-10-08 | 배포가 Gemini 열쇠와 집 PC Ollama 설정을 앱에 넣기(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.26.1) |
