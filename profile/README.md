@@ -361,6 +361,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.27.5 | 2026-10-08 | 배포 시 학교 서버 SSH 터널이 열릴 때까지 기다리게(터널 끊김 수정, 배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.5) |
 | v1.27.4 | 2026-10-08 | 학교 서버 클러스터가 학교 DNS로 바깥 주소를 찾게(도메인 연결 복구, 배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.4) |
 | v1.27.3 | 2026-10-08 | 학교 서버에서 도메인 연결(cloudflared)이 뜨도록 http2로 연결, 실패 원인 로그(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.3) |
 | v1.27.2 | 2026-10-08 | 소스코드와 문서 저장소 분리(문서는 AIGJ-01-002-blog/docs) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.2) |
