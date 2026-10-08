@@ -361,6 +361,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.28.1 | 2026-10-08 | AI 발행·삭제를 켠 뒤 다시 연결하라는 안내 | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.28.1) |
 | v1.28.0 | 2026-10-08 | 설정에서 켜면 AI가 발행·삭제까지 (기본 꺼짐) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.28.0) |
 | v1.27.7 | 2026-10-08 | 학교 MinIO 주소를 8000번 포트로(nhn, 배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.7) |
 | v1.27.6 | 2026-10-08 | main 머지 시 학교 서버에 자동 배포(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.27.6) |
