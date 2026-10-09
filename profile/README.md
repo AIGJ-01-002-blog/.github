@@ -367,6 +367,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.51.0 | 2026-10-09 | AI 연결(MCP)로 메모·일기·제안·임시글에서 전공자용 글감 추천 받기(suggest_topics) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.51.0) |
 | v1.50.2 | 2026-10-09 | 홈 브랜치 버튼을 하나 골라도 다른 버튼이 남고, 긴 이름은 버튼 안에서 말줄임 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.50.2) |
 | v1.50.1 | 2026-10-09 | GitHub·Google 로그인이 "redirect_uri가 등록되지 않았다"며 막히던 문제 고침 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.50.1) |
 | v1.50.0 | 2026-10-09 | 관리자 대시보드 지표 칸을 방문·회원·글·반응 묶음으로, 증감 표시와 날짜별 흐름 막대 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.50.0) |
