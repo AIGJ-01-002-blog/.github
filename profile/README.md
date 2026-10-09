@@ -367,6 +367,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.51.3 | 2026-10-10 | AI 일기를 사람이 쓴 일기처럼: 시각 목록 대신 주제별 문단, 일기체 메모 안내 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.51.3) |
 | v1.51.2 | 2026-10-09 | 운영 대시보드(Kubernetes Dashboard, 읽기 전용 로그인) 설치(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.51.2) |
 | v1.51.1 | 2026-10-09 | 글감 추천(suggest_topics)이 "배포했다"·"색 토큰" 같은 말로 관점을 잘못 고르던 문제 고침 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.51.1) |
 | v1.51.0 | 2026-10-09 | AI 연결(MCP)로 메모·일기·제안·임시글에서 전공자용 글감 추천 받기(suggest_topics) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.51.0) |
