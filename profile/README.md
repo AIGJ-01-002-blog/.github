@@ -367,6 +367,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.48.1 | 2026-10-09 | 선택 상자 화살표를 상자 안쪽에 맞춤 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.48.1) |
 | v1.48.0 | 2026-10-09 | 새 디자인 3단계: 포트폴리오 모드(그래프 로고, 프로젝트 = 포트폴리오에 보이는 시리즈, 우리 팀이 한 일·제 역할) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.48.0) |
 | v1.47.0 | 2026-10-09 | 새 디자인 2단계: 글 화면 브랜치 상자·비슷한 글, 시리즈 이어 읽기·새 글 알림, 발행 창 브랜치 추천 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.47.0) |
 | v1.46.0 | 2026-10-09 | 새 디자인 1단계: 홈 브랜치 그래프(시리즈·비슷한 주제 자동 묶음), 브랜치로 걸러 보기, 새 글꼴·색, 글 읽은 위치 막대 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.46.0) |
