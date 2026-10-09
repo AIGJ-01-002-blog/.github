@@ -367,6 +367,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.42.0 | 2026-10-09 | UX/UI 다시 점검: 초점·휴대폰 터치·오류 알림·확인 창 정리, 카드 효과 줄이기 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.42.0) |
 | v1.41.0 | 2026-10-09 | 글 카드에 태그·조회수·댓글 수, 글 화면 공개 설정을 글자 버튼 모양으로 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.41.0) |
 | v1.40.0 | 2026-10-09 | 관리자 대시보드에 날짜별 활동한 회원 그래프 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.40.0) |
 | v1.39.0 | 2026-10-09 | 가입 화면에서 아이디(이메일) 확인과 인증번호 이메일 인증 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.39.0) |
