@@ -367,6 +367,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.49.0 | 2026-10-09 | AI 연결(MCP)로 시리즈 만들기·글 넣기·포트폴리오 프로젝트 칸 쓰기 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.49.0) |
 | v1.48.2 | 2026-10-09 | 주제 브랜치 이름에 거의 모든 글이 쓰는 태그 대신 그 브랜치만의 태그를 쓰고, 브랜치 버튼 설명에 "자동으로 묶인 글"임을 밝힘 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.48.2) |
 | v1.48.1 | 2026-10-09 | 선택 상자 화살표를 상자 안쪽에 맞춤 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.48.1) |
 | v1.48.0 | 2026-10-09 | 새 디자인 3단계: 포트폴리오 모드(그래프 로고, 프로젝트 = 포트폴리오에 보이는 시리즈, 우리 팀이 한 일·제 역할) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.48.0) |
