@@ -367,6 +367,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.43.0 | 2026-10-09 | 목록 무한 스크롤: 끝까지 내리면 다음 글이 저절로 이어서 붙음, 실패하면 [다시 시도] | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.43.0) |
 | v1.42.1 | 2026-10-09 | 관리자 대시보드 방문자 수에 관리자·매니저 방문도 함께 세기 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.42.1) |
 | v1.42.0 | 2026-10-09 | UX/UI 다시 점검: 초점·휴대폰 터치·오류 알림·확인 창 정리, 카드 효과 줄이기 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.42.0) |
 | v1.41.0 | 2026-10-09 | 글 카드에 태그·조회수·댓글 수, 글 화면 공개 설정을 글자 버튼 모양으로 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.41.0) |
