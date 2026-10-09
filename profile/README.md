@@ -367,6 +367,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.50.0 | 2026-10-09 | 관리자 대시보드 지표 칸을 방문·회원·글·반응 묶음으로, 증감 표시와 날짜별 흐름 막대 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.50.0) |
 | v1.49.1 | 2026-10-09 | 휴대폰에서 포트폴리오 프로젝트 카드가 화면 밖으로 넘치던 문제 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.49.1) |
 | v1.49.0 | 2026-10-09 | AI 연결(MCP)로 시리즈 만들기·글 넣기·포트폴리오 프로젝트 칸 쓰기 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.49.0) |
 | v1.48.2 | 2026-10-09 | 주제 브랜치 이름에 거의 모든 글이 쓰는 태그 대신 그 브랜치만의 태그를 쓰고, 브랜치 버튼 설명에 "자동으로 묶인 글"임을 밝힘 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.48.2) |
