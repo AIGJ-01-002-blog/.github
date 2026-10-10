@@ -368,6 +368,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.59.2 | 2026-10-10 | 휴대폰에서 글자가 칸 안에서 쪼개지던 줄바꿈 정리(낱말 단위 줄바꿈, 내 블로그 탭, 글쓰기 [발행] 버튼) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.59.2) |
 | v1.59.1 | 2026-10-10 | 🌐 언어 메뉴를 사이트 맨 아래에서 머리말(테마 버튼 옆)로 옮김 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.59.1) |
 | v1.59.0 | 2026-10-10 | 화면 다국어 2단계(글쓰기·설정·내 글 관리·문의·AI 연결 화면도 영어·일본어·중국어) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.59.0) |
 | v1.58.0 | 2026-10-10 | 화면 다국어 1단계(영어·일본어·중국어, 맨 아래 🌐 언어 상자) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.58.0) |
