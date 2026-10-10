@@ -152,7 +152,7 @@ flowchart LR
     T[텔레그램] -->|봇 API| A
     I -->|/ · /api · /rss| A[blog-app<br/>Spring Boot 4.1 · Java 21<br/>파드 여러 개]
     I -->|/blog-images| M[(MinIO / S3<br/>사진·첨부)]
-    A --> P[(PostgreSQL<br/>Flyway V1~V30)]
+    A --> P[(PostgreSQL<br/>Flyway V1~V31)]
     A --> R[(Redis<br/>세션·요청 제한·조회수·캐시)]
     A --> M
     A -.선택.-> G[Google Gemini]
@@ -244,7 +244,7 @@ GitHub Actions로 테스트하고 이미지를 만들어 GHCR에 올린 뒤, kus
 
 | 경로 | 설명 |
 | --- | --- |
-| [app/backend](https://github.com/AIGJ-01-002-blog/devlog/tree/main/app/backend) | 백엔드 — Spring Boot 4.1, Java 21. 기능 모듈, Flyway 마이그레이션(V1~V30), 테스트 |
+| [app/backend](https://github.com/AIGJ-01-002-blog/devlog/tree/main/app/backend) | 백엔드 — Spring Boot 4.1, Java 21. 기능 모듈, Flyway 마이그레이션(V1~V31), 테스트 |
 | [app/frontend](https://github.com/AIGJ-01-002-blog/devlog/tree/main/app/frontend) | 프론트엔드 — React 19 SPA, TypeScript, Vite. 화면, 자동 저장(IndexedDB), 다크 모드 |
 | [deploy](https://github.com/AIGJ-01-002-blog/devlog/tree/main/deploy) | 배포 — Dockerfile, 쿠버네티스 매니페스트(base·selfhosted·nhn·local), 배포·롤백·비밀값 검사 스크립트 |
 | [.github](https://github.com/AIGJ-01-002-blog/devlog/tree/main/.github) | CI/CD — 백엔드·화면 테스트, 이미지 빌드·배포, 릴리스, Discord·텔레그램 알림 |
@@ -287,6 +287,7 @@ GitHub Actions로 테스트하고 이미지를 만들어 GHCR에 올린 뒤, kus
 | `GITHUB_CLIENT_ID` / `GITHUB_CLIENT_SECRET` | GitHub OAuth 앱 | 개발용 값(실제 GitHub 로그인 안 됨) |
 | `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` | Google OAuth 클라이언트 | Google 로그인 숨김 |
 | `KAKAO_CLIENT_ID` / `KAKAO_CLIENT_SECRET` / `KAKAO_SCOPES` | 카카오 로그인 앱(REST API 키·Client Secret, 동의항목) | 카카오 로그인 숨김 |
+| `FACEBOOK_CLIENT_ID` / `FACEBOOK_CLIENT_SECRET` | Facebook 로그인 앱(앱 ID·앱 시크릿 코드) | Facebook 로그인 숨김 |
 | `SMTP_HOST` / `SMTP_USERNAME` / `SMTP_PASSWORD` | 인증·재설정 메일 발송 | 보내지 않고 보관 |
 | `S3_ENDPOINT` / `S3_BUCKET` / `S3_ACCESS_KEY` / `S3_SECRET_KEY` | 사진·첨부 저장소(MinIO·S3) | 로컬 폴더에 저장 |
 | `GEMINI_API_KEY` / `OLLAMA_BASE_URL` | AI 태그 추천 | 둘 다 없으면 기능 꺼짐 |
@@ -322,7 +323,7 @@ npm run dev        # http://localhost:5173
 | Spring Security · OAuth2 Client | Boot 4.1 | account | GitHub·Google 로그인, 세션, CSRF, 경로별 권한 |
 | Spring Data JPA (Hibernate) | Boot 4.1 | 도메인 전체 | 회원·글·댓글 등 도메인 저장 |
 | Spring Session Data Redis · Spring Data Redis | Boot 4.1 | 세션, 요청 제한, 조회수, 캐시 | 파드 여러 개가 같은 세션을 보고, 동시 요청도 Redis 스크립트 하나로 판정합니다 |
-| Flyway | Boot 4.1 | DB | 스키마를 V1~V30 마이그레이션으로 관리하고 앱 시작 때 적용합니다 |
+| Flyway | Boot 4.1 | DB | 스키마를 V1~V31 마이그레이션으로 관리하고 앱 시작 때 적용합니다 |
 | commonmark-java (+ GFM 확장) | 0.30.0 | 본문 렌더링 | Markdown → HTML. 표·취소선·체크 목록·자동 링크·제목 앵커 |
 | OWASP Java HTML Sanitizer | 20260924.2 | 본문 정화 | 렌더링한 HTML을 허용 목록으로 정화해 XSS를 막습니다 |
 | AWS SDK for Java (S3) | 2.55.12 | media | MinIO·S3에 사진과 첨부를 올립니다 |
@@ -368,6 +369,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.61.0 | 2026-10-10 | Facebook 로그인(`fb-` 주소, Facebook 키를 넣으면 버튼이 보임) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.61.0) |
 | v1.60.0 | 2026-10-10 | 관리자가 탈퇴 회원을 30일 기다리지 않고 바로 정리 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.60.0) |
 | v1.59.3 | 2026-10-10 | 카카오로 가입할 때 프로필 사진이 들어가지 않던 것 고침 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.59.3) |
 | v1.59.2 | 2026-10-10 | 휴대폰에서 글자가 칸 안에서 쪼개지던 줄바꿈 정리(낱말 단위 줄바꿈, 내 블로그 탭, 글쓰기 [발행] 버튼) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.59.2) |
