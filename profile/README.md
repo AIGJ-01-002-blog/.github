@@ -369,6 +369,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.61.1 | 2026-10-10 | 영어·일본어·중국어 화면의 휴대폰 줄바꿈 정리(넘침·낱자 끊김) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.61.1) |
 | v1.61.0 | 2026-10-10 | Facebook 로그인(`fb-` 주소, Facebook 키를 넣으면 버튼이 보임) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.61.0) |
 | v1.60.0 | 2026-10-10 | 관리자가 탈퇴 회원을 30일 기다리지 않고 바로 정리 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.60.0) |
 | v1.59.3 | 2026-10-10 | 카카오로 가입할 때 프로필 사진이 들어가지 않던 것 고침 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.59.3) |
