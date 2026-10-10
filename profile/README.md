@@ -367,6 +367,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.53.0 | 2026-10-10 | 사이트 소개 화면(/about)과 맨 아래 링크, 광고·쿠키 항목을 더한 개인정보 처리방침 재동의 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.53.0) |
 | v1.52.0 | 2026-10-10 | 구글 애드센스: 공개 화면에 광고 코드, 광고용 엄격한 보안 정책(CSP), ads.txt, 개인정보 처리방침에 광고·쿠키 안내 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.52.0) |
 | v1.51.3 | 2026-10-10 | AI 일기를 사람이 쓴 일기처럼: 시각 목록 대신 주제별 문단, 일기체 메모 안내 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.51.3) |
 | v1.51.2 | 2026-10-09 | 운영 대시보드(Kubernetes Dashboard, 읽기 전용 로그인) 설치(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.51.2) |
