@@ -367,6 +367,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.53.1 | 2026-10-10 | ChatGPT 커넥터 로그인 연결 보강(Basic으로 보내는 client_id), 구글 로그인을 GitHub Secret으로 켜기 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.53.1) |
 | v1.53.0 | 2026-10-10 | 사이트 소개 화면(/about)과 맨 아래 링크, 광고·쿠키 항목을 더한 개인정보 처리방침 재동의 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.53.0) |
 | v1.52.0 | 2026-10-10 | 구글 애드센스: 공개 화면에 광고 코드, 광고용 엄격한 보안 정책(CSP), ads.txt, 개인정보 처리방침에 광고·쿠키 안내 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.52.0) |
 | v1.51.3 | 2026-10-10 | AI 일기를 사람이 쓴 일기처럼: 시각 목록 대신 주제별 문단, 일기체 메모 안내 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.51.3) |
