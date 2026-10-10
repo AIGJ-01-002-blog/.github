@@ -368,6 +368,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.58.0 | 2026-10-10 | 화면 다국어 1단계(영어·일본어·중국어, 맨 아래 🌐 언어 상자) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.58.0) |
 | v1.57.0 | 2026-10-10 | 카카오 로그인(`ka-` 주소, 카카오 키를 넣으면 버튼이 보임) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.57.0) |
 | v1.56.0 | 2026-10-10 | 팔로워·팔로잉 목록 공개/비공개 설정(비공개면 "비공개 계정입니다", 수는 그대로) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.56.0) |
 | v1.55.0 | 2026-10-10 | 친구 요청을 받거나 내 요청이 수락되면 알림(텔레그램·디스코드 포함, 알림 설정에서 끄기) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.55.0) |
