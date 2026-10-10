@@ -61,7 +61,7 @@ Claude·Cursor에 devlog MCP를 연결하면 AI가 개발 일지 초안을 써 �
 
 운영 서버가 정해지면 https://devlog.life 에서 엽니다. 그 전에는 아래처럼 내 컴퓨터에서 바로 띄워 볼 수 있습니다.
 
-1. GitHub·Google 계정이나 이메일로 가입하고 블로그 주소(`/@아이디`)와 닉네임을 정합니다.
+1. GitHub·Google·카카오·Facebook 계정이나 이메일로 가입하고 블로그 주소(`/@아이디`)와 닉네임을 정합니다.
 2. **새 글 작성**에서 Markdown으로 씁니다. 왼쪽에 쓰면 오른쪽에 바로 미리보기가 나오고, 쓰는 동안 자동으로 저장됩니다.
 3. **발행**에서 태그와 공개 범위를 고르면 홈·태그·검색·팔로워 피드에 글이 올라갑니다.
 
@@ -133,12 +133,12 @@ AI 사용에 동의했다면 AI가 제목을 붙이고 문장을 다듬고, 아�
 - **조회수** — 같은 사람·같은 글은 24시간에 한 번만 셉니다. 원래 IP는 어디에도 저장하지 않습니다.
 - **팔로우와 피드** — 팔로우한 사람의 전체 공개 글만 모은 `/feed`.
 - **친구** — 친구 요청·수락, 친구끼리 최근 활동 보기, 친구 공개 글.
-- **알림** — 같은 글의 좋아요는 "OO님 외 N명"으로 묶고, 종류별로 끌 수 있습니다. 90일 보관.
+- **알림** — 같은 글의 좋아요는 "OO님 외 N명"으로 묶고, 종류별로 끌 수 있습니다. 텔레그램·디스코드로도 받습니다. 90일 보관.
 
 ### 계정과 운영
 
-- **가입·로그인** — GitHub·Google OAuth2, 이메일(인증 메일, 비밀번호 재설정). 블로그 주소와 닉네임 규칙, 예약어.
-- **프로필·설정** — 사진 자르기, 닉네임·소개, 블로그 소개 탭, 소셜 링크, 기본 공개 범위, 알림 설정.
+- **가입·로그인** — GitHub·Google·카카오·Facebook OAuth2, 이메일(인증 메일, 비밀번호 재설정). 블로그 주소와 닉네임 규칙, 예약어.
+- **프로필·설정** — 사진 자르기, 닉네임·소개, 블로그 소개 탭, 소셜 링크, 기본 공개 범위, 팔로워·팔로잉 목록 공개, 알림 설정. 화면은 한국어·English·日本語·中文 중에서 고릅니다.
 - **신고·숨김·정지** — 글·댓글 신고(사유 6가지), 관리자 신고 처리 화면, 1일~영구 정지.
 - **탈퇴와 복구** — 30일 유예 동안 로그인하면 복구, 그 뒤 매일 한 사람씩 한 트랜잭션으로 정리합니다.
 
@@ -164,7 +164,7 @@ flowchart LR
 
 | 모듈 | 하는 일 | 저장소 |
 | --- | --- | --- |
-| **account** | 가입·로그인(GitHub·Google·이메일), 블로그 주소·닉네임, 프로필·설정, 소개, 소셜 링크, 탈퇴·복구 | PostgreSQL, Redis(세션) |
+| **account** | 가입·로그인(GitHub·Google·카카오·Facebook·이메일), 블로그 주소·닉네임, 프로필·설정, 소개, 소셜 링크, 탈퇴·복구 | PostgreSQL, Redis(세션) |
 | **post** | 글 쓰기·자동 저장·발행·수정, 공개 범위, 휴지통, 내 글 관리, Markdown 미리보기 | PostgreSQL, Redis(자동 저장·멱등 키) |
 | **media** | 사진·GIF·첨부파일 올리기와 검사, 쓰지 않는 파일 정리 | MinIO/S3(없으면 로컬 폴더) |
 | **discovery · page** | 홈·블로그·글 상세 조회, 이전·다음 글, RSS, 링크 미리보기용 머리 정보를 넣은 화면 셸 | PostgreSQL |
@@ -320,7 +320,7 @@ npm run dev        # http://localhost:5173
 | --- | --- | --- | --- |
 | Java | 21 | 앱 전체 | LTS 버전. 레코드로 요청·응답 모양을 짧게 적습니다 |
 | Spring Boot | 4.1.1 | 앱 전체 | 웹 MVC, 검증, 보안, 메일, Actuator 헬스 체크(쿠버네티스 준비 확인)를 한 버전으로 맞춥니다 |
-| Spring Security · OAuth2 Client | Boot 4.1 | account | GitHub·Google 로그인, 세션, CSRF, 경로별 권한 |
+| Spring Security · OAuth2 Client | Boot 4.1 | account | GitHub·Google·카카오·Facebook 로그인, 세션, CSRF, 경로별 권한 |
 | Spring Data JPA (Hibernate) | Boot 4.1 | 도메인 전체 | 회원·글·댓글 등 도메인 저장 |
 | Spring Session Data Redis · Spring Data Redis | Boot 4.1 | 세션, 요청 제한, 조회수, 캐시 | 파드 여러 개가 같은 세션을 보고, 동시 요청도 Redis 스크립트 하나로 판정합니다 |
 | Flyway | Boot 4.1 | DB | 스키마를 V1~V31 마이그레이션으로 관리하고 앱 시작 때 적용합니다 |
@@ -386,7 +386,7 @@ npm run dev        # http://localhost:5173
 | v1.53.0 | 2026-10-10 | 사이트 소개 화면(/about)과 맨 아래 링크, 광고·쿠키 항목을 더한 개인정보 처리방침 재동의 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.53.0) |
 | v1.52.0 | 2026-10-10 | 구글 애드센스: 공개 화면에 광고 코드, 광고용 엄격한 보안 정책(CSP), ads.txt, 개인정보 처리방침에 광고·쿠키 안내 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.52.0) |
 | v1.51.3 | 2026-10-10 | AI 일기를 사람이 쓴 일기처럼: 시각 목록 대신 주제별 문단, 일기체 메모 안내 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.51.3) |
-| v1.51.2 | 2026-10-09 | 운영 대시보드(Kubernetes Dashboard, 읽기 전용 로그인) 설치(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/Devlog/releases/tag/v1.51.2) |
+| v1.51.2 | 2026-10-09 | 운영 대시보드(Kubernetes Dashboard, 읽기 전용 로그인) 설치(배포 구성) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.51.2) |
 | v1.51.1 | 2026-10-09 | 글감 추천(suggest_topics)이 "배포했다"·"색 토큰" 같은 말로 관점을 잘못 고르던 문제 고침 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.51.1) |
 | v1.51.0 | 2026-10-09 | AI 연결(MCP)로 메모·일기·제안·임시글에서 전공자용 글감 추천 받기(suggest_topics) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.51.0) |
 | v1.50.2 | 2026-10-09 | 홈 브랜치 버튼을 하나 골라도 다른 버튼이 남고, 긴 이름은 버튼 안에서 말줄임 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.50.2) |
