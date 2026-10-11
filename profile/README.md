@@ -357,10 +357,10 @@ npm run dev        # http://localhost:5173
 
 | 기술 | 쓰는 곳 | 역할 |
 | --- | --- | --- |
-| JUnit 5 · Spring Boot Test · Spring Security Test | 백엔드 | 단위·통합 테스트 408건(v1.21.0 기준) |
+| JUnit 5 · Spring Boot Test · Spring Security Test | 백엔드 | 단위·통합 테스트 572건(v1.64.2 기준) |
 | Testcontainers (PostgreSQL) | 백엔드 | 실제 PostgreSQL로 마이그레이션·쿼리·동시성을 검증합니다 |
 | JaCoCo | 백엔드 | 줄 커버리지 40% 기준을 CI에서 확인합니다 |
-| Vitest · Testing Library · jsdom | 프론트엔드 | 화면과 로직 테스트 350건(v1.21.0 기준) |
+| Vitest · Testing Library · jsdom | 프론트엔드 | 화면과 로직 테스트 312건(v1.64.2 기준) |
 | fake-indexeddb | 프론트엔드 | 오프라인 자동 저장 테스트 |
 
 ## 릴리스
