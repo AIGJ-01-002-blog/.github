@@ -369,6 +369,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.62.0 | 2026-10-11 | 애드센스 반려 대응: 개인정보 처리방침·이용약관을 서버가 그려 검색·심사 도구가 읽게, 글이 하나뿐인 태그 화면은 검색 수집 제외 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.62.0) |
 | v1.61.2 | 2026-10-11 | 화면 코드의 .js 사본 정리(옛 코드가 배포될 위험 없앰) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.61.2) |
 | v1.61.1 | 2026-10-10 | 영어·일본어·중국어 화면의 휴대폰 줄바꿈 정리(넘침·낱자 끊김) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.61.1) |
 | v1.61.0 | 2026-10-10 | Facebook 로그인(`fb-` 주소, Facebook 키를 넣으면 버튼이 보임) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.61.0) |
