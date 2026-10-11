@@ -369,6 +369,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.64.1 | 2026-10-11 | ChatGPT 안내에 Plus에서 임시글 만들기·발행·삭제까지 실제로 된 것을 더함 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.64.1) |
 | v1.64.0 | 2026-10-11 | 설정 › AI 연결에 ChatGPT·Claude 앱·Claude Code 연결 순서와 자주 묻는 질문 안내 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.64.0) |
 | v1.63.0 | 2026-10-11 | AI가 쓴 글에 토큰·API 키 같은 비밀값이 보이면 AI 발행과 AI 일기 자동 발행을 막고 임시글로 남김 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.63.0) |
 | v1.62.0 | 2026-10-11 | 애드센스 반려 대응: 개인정보 처리방침·이용약관을 서버가 그려 검색·심사 도구가 읽게, 글이 하나뿐인 태그 화면은 검색 수집 제외 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.62.0) |
