@@ -369,6 +369,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.65.1 | 2026-10-12 | 첫 화면이 받는 파일을 절반으로(글꼴을 CSS 밖으로, 고른 언어 사전만), 정적 파일이 Cloudflare 캐시를 타게 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.65.1) |
 | v1.65.0 | 2026-10-12 | AI 일기는 블로그에 그대로 보이고 검색 수집(noindex)·사이트맵·광고에서만 빠짐 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.65.0) |
 | v1.64.2 | 2026-10-11 | 약관·처리방침 화면의 제목·시행일·링크도 영어·일본어·중국어로(본문은 한국어 원문 안내), 빠진 spec 목록 정리 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.64.2) |
 | v1.64.1 | 2026-10-11 | ChatGPT 안내에 Plus에서 임시글 만들기·발행·삭제까지 실제로 된 것을 더함 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.64.1) |
