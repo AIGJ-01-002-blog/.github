@@ -369,6 +369,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.65.4 | 2026-10-12 | 릴리스 노트의 [이전 버전 더 보기] 버튼 모양과 "DB" 같은 영문 구획 이름 글꼴 고침 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.65.4) |
 | v1.65.3 | 2026-10-12 | 소나 새 코드 이슈 2건 정리로 품질 게이트 통과(화면·동작 그대로) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.65.3) |
 | v1.65.2 | 2026-10-12 | SonarQube 이슈 정리: 신뢰성 이슈 0건, 전체 384건 → 74건, 동적 SQL 숫자 바인딩(화면·동작 그대로) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.65.2) |
 | v1.65.1 | 2026-10-12 | 첫 화면이 받는 파일을 절반으로(글꼴을 CSS 밖으로, 고른 언어 사전만), 정적 파일이 Cloudflare 캐시를 타게 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.65.1) |
