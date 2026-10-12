@@ -369,6 +369,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.65.3 | 2026-10-12 | 소나 새 코드 이슈 2건 정리로 품질 게이트 통과(화면·동작 그대로) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.65.3) |
 | v1.65.2 | 2026-10-12 | SonarQube 이슈 정리: 신뢰성 이슈 0건, 전체 384건 → 74건, 동적 SQL 숫자 바인딩(화면·동작 그대로) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.65.2) |
 | v1.65.1 | 2026-10-12 | 첫 화면이 받는 파일을 절반으로(글꼴을 CSS 밖으로, 고른 언어 사전만), 정적 파일이 Cloudflare 캐시를 타게 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.65.1) |
 | v1.65.0 | 2026-10-12 | AI 일기는 블로그에 그대로 보이고 검색 수집(noindex)·사이트맵·광고에서만 빠짐 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.65.0) |
