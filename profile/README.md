@@ -369,6 +369,7 @@ npm run dev        # http://localhost:5173
 
 | 버전 | 날짜 | 주요 내용 | 릴리스 노트 |
 | --- | --- | --- | --- |
+| v1.65.5 | 2026-10-12 | 홈 글 목록 썸네일을 키워 표지 그림 속 글자가 보이게(PC 280px 16:9, 모바일은 글 위에 화면 폭으로) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.65.5) |
 | v1.65.4 | 2026-10-12 | 릴리스 노트의 [이전 버전 더 보기] 버튼 모양과 "DB" 같은 영문 구획 이름 글꼴 고침 | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.65.4) |
 | v1.65.3 | 2026-10-12 | 소나 새 코드 이슈 2건 정리로 품질 게이트 통과(화면·동작 그대로) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.65.3) |
 | v1.65.2 | 2026-10-12 | SonarQube 이슈 정리: 신뢰성 이슈 0건, 전체 384건 → 74건, 동적 SQL 숫자 바인딩(화면·동작 그대로) | [보기](https://github.com/AIGJ-01-002-blog/devlog/releases/tag/v1.65.2) |
